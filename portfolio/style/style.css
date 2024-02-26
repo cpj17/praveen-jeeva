@@ -113,3 +113,15 @@
   .lead {
     font-weight: 400;
   }
+
+  .service-box {
+    height: 90%;
+  }
+
+  .card-blog {
+    height: 100%;
+  }
+  
+  .sect-pt4 .route {
+    text-align: center;
+  }
