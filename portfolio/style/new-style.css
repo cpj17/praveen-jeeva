@@ -1,0 +1,460 @@
+﻿/* about (begins) */
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.about-left {
+    flex: 1;
+    background-color: #042f2d;
+    color: white;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .about-left img {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-bottom: 20px;
+        border: 4px solid white;
+    }
+
+    .about-left .contact p {
+        margin: 6px 0;
+        font-size: 0.95rem;
+    }
+
+.role {
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.languages {
+    margin-top: 20px;
+    text-align: center;
+}
+
+    .languages h3 {
+        margin-bottom: 10px;
+        font-size: 1.1rem;
+    }
+
+.language-badges {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 12px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.about-right {
+    flex: 2;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .about-right h2 {
+        color: #6c63ff;
+        margin-bottom: 20px;
+    }
+
+    .about-right p {
+        line-height: 1.7;
+        margin-bottom: 20px;
+    }
+
+.links {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.link-icon {
+    text-decoration: none;
+    color: #6c63ff;
+    font-weight: 500;
+    border: 1px solid #ddd;
+    padding: 8px 14px;
+    border-radius: 30px;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f7f7ff;
+}
+
+    .link-icon:hover {
+        background-color: #6c63ff;
+        color: white;
+    }
+
+    .link-icon svg {
+        width: 16px;
+        height: 16px;
+        fill: currentColor;
+    }
+
+@media screen and (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-left, .about-right {
+        padding: 30px 20px;
+    }
+}
+
+/* about (ends) */
+
+/* work experience (begins) */
+.experience-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.exp-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color: #2c3e50;
+}
+
+.exp-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 80px;
+}
+
+.exp-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px 25px;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+    .exp-card:hover {
+        transform: translateY(-8px);
+    }
+
+.exp-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.exp-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background: #3498db;
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.exp-company-role {
+    display: flex;
+    flex-direction: column;
+}
+
+.exp-company {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.exp-role {
+    font-size: 1rem;
+    color: #555;
+}
+
+.exp-duration {
+    font-size: 0.9rem;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.exp-tech {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.exp-desc {
+    font-size: 0.95rem;
+    color: #444;
+}
+
+@media (max-width: 768px) {
+    .exp-grid {
+        grid-template-columns: 1fr;
+    }
+}
+/* work experience (ends) */
+
+
+/* Project (begins) */
+.project-section {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 20px;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+    .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+    }
+
+    .project-card::after {
+        content: "🔍";
+        font-size: 1.8rem;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        opacity: 0;
+        transition: opacity 0.3s;
+    }
+
+    .project-card:hover::after {
+        opacity: 1;
+    }
+
+.project-name {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.tag {
+    background: #e1ecf4;
+    color: #0366d6;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.project-desc {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Lightbox Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+    .modal h3 {
+        margin-top: 0;
+        font-size: 1.5rem;
+    }
+
+    .modal p {
+        margin: 15px 0;
+    }
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 1.3rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #888;
+}
+
+    .close-btn:hover {
+        color: #333;
+    }
+
+@keyframes fadeIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .project-card::after {
+        top: 10px;
+        right: 10px;
+    }
+}
+/* Project (ends) */
+
+/* Education (begins) */
+.education-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+.edu-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 60px;
+    color: #34495e;
+}
+
+.edu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.edu-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    position: relative;
+}
+
+    .edu-card:hover {
+        transform: translateY(-8px);
+    }
+
+.edu-icon {
+    font-size: 40px;
+    color: #3498db;
+    background: #ecf6fd;
+    padding: 15px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.edu-year {
+    background: #3498db;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.edu-degree {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+    text-align: center;
+}
+
+.edu-institute {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.edu-desc {
+    font-size: 0.95rem;
+    color: #555;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .edu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* Education (ends) */
